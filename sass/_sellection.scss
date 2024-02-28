@@ -1,0 +1,100 @@
+#sellection {
+    background-image: url(../images/image\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .sellection__card {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        padding: 30px 0px;
+        .sellection__left {
+            width: 50%;
+            position: relative;
+            img {
+                width: 80%
+            }
+            .seller-logo-1 {
+                position: absolute;
+                width: 100%;
+                top: 60px;
+                left: -40px;
+            }
+            .seller-logo-2 {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .sellection__right {
+            width: 50%;
+
+            .sellection__desc {
+                font-family: Josefin Sans;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #2E299A;
+            }
+            .sellection__title {
+                font-family: Josefin Sans;
+                font-size: 50px;
+                line-height: 54px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding: 20px 0px;
+                span {
+                    color: $hoverColor;
+                }
+            }
+            .sellection__text {
+                font-family: Josefin Sans;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding: 40px 0px;
+            }
+            .seller__btn {
+               display: flex;
+               align-items: center;
+               gap: 10px;
+            }
+        }
+    }
+
+    @media (max-width:930px) {
+        .sellection__card {
+            flex-direction: column;
+        }
+
+        .sellection__left,
+        .sellection__right {
+            width: 70% !important;
+        }
+    }
+
+    @media (max-width:560px) {
+        .sellection__card {
+            flex-direction: column;
+        }
+
+        .sellection__left,
+        .sellection__right {
+            width: 100% !important;
+        }
+        .seller-logo-1,
+        .seller-logo-2 {
+            display: none;
+        }
+    }
+
+    @media (max-width:350px) {
+        .sellection__title {
+            font-size: 35px !important;
+            line-height: 40px !important;
+            padding: 0 !important;
+        }
+    }
+}

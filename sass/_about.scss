@@ -1,0 +1,23 @@
+#about {
+  background-image: url(../images/about-img.png);
+  padding: 50px 0px;
+  .about__title {
+    font-family: Josefin Sans;
+    font-size: 50px;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 20px 0px 40px;
+    span {
+      color: $hoverColor;
+    }
+  }
+  .about__desc {
+    font-family: Josefin Sans;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #2E299A;
+  }
+}
